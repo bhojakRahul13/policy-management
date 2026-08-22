@@ -1,0 +1,30 @@
+{
+  "name": "policy-management-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "pm2:start": "pm2 start ecosystem.config.js",
+    "pm2:restart": "pm2 restart policy-management",
+    "pm2:stop": "pm2 stop policy-management",
+    "pm2:logs": "pm2 logs policy-management"
+  },
+  "keywords": [],
+  "author": "Rajendra Bhojak",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.9.3",
+    "multer": "^2.2.0",
+    "node-cron": "^4.6.0",
+    "pm2": "^7.0.3",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
